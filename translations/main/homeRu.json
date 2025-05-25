@@ -1,0 +1,27 @@
+{
+    "bannerText": "logo",
+    "aboutH1": "Кто мы ?",
+    "aboutp1": "lorem10",
+    "aboutP2": "Lorem 10",
+    "aboutSpan": "Lorem5",
+    "servicesTitle": "Услуги",
+    "card1Title": "Квест",
+    "card2Title": "Аналитика",
+    "card3Title": "Тренинги",
+    "card4Title": "Тайный психолог",
+    "card5Title": "VR-экскурсии",
+    "button": "Узнать больше",
+    "titleForm": "Контакты",
+  "name": "Имя",
+  "phone": "Телефон",
+  "message": "Сообщение",
+  "buttonForm": "Отправить сообщение",
+  "validation": {
+  "nameRequired": "Введите имя",
+  "emailRequired": "Введите email",
+  "invalidEmail": "Неверный формат email",
+  "phoneRequired": "Введите номер телефона",
+  "invalidPhone": "Допустимы только цифры и символы + - ( )"
+}
+
+}
