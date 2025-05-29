@@ -1,0 +1,81 @@
+import React from "react";
+import Slider from "react-slick";
+import quest from "../images/quest.jpg"
+import vr from "../images/vr.jpg"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+
+export default function SliderAbout() {
+  var settings = {
+    dots: false,
+    infinite: true,
+    className: "center",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    swipe: true,
+touchMove: true,
+    speed: 3000,
+    autoplaySpeed:3000,
+    cssEase: "linear",
+    arrows: false,
+  
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+  return (
+    <div className="slider-container">
+      <Slider {...settings} >
+        <div>
+         <img src={quest} alt="" />
+        </div>
+        <div>
+        <img src={vr} alt="" />
+        </div>
+       
+        <div>
+         <img src={quest} alt="" />
+        </div>
+        <div>
+        <img src={vr} alt="" />
+        </div>
+       
+        <div>
+         <img src={quest} alt="" />
+        </div>
+        <div>
+        <img src={vr} alt="" />
+        </div>
+       
+      </Slider>
+    </div>
+  );
+}
+

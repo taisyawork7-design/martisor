@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Lottie from "lottie-react";
-import successAnimation from "../images/Animation - 1748178005116.json";
+import successAnimation from "../images/Animation - 1748445879287.json";
 import { useTranslation } from "react-i18next";
 
 export default function SimpleForm() {
