@@ -21,14 +21,14 @@ export default function SliderServicies() {
     const cards = [
         {
             img: card1,
-            titleKey: "card1Title",
+            titleKey: "card2Title",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto totam excepturi unde minus repellendus velit in vel numquam magni.",
+                "card2Text",
         },
-        { img: card2, titleKey: "card2Title", description: "Description for Card 2" },
-        { img: card3, titleKey: "card3Title", description: "Description for Card 3" },
-        { img: card4, titleKey: "card4Title", description: "Description for Card 4" },
-        { img: card5, titleKey: "card5Title", description: "Description for Card 5" },
+        { img: card2, titleKey: "card4Title", description: "card4Text" },
+        { img: card3, titleKey: "card3Title", description: "card3Text" },
+        { img: card4, titleKey: "card5Title", description: "card5Text" },
+        { img: card5, titleKey: "card1Title", description: "card1Text" },
     ];
     useEffect(() => {
         document.body.style.overflow = openCardIndex !== null ? "hidden" : "auto";
@@ -85,7 +85,7 @@ export default function SliderServicies() {
                             <img src={close} alt="close" />
                         </button>
                         <img src={cards[openCardIndex].img} alt="" />
-                        <p>{cards[openCardIndex].description}</p>
+                        <p>{t(cards[openCardIndex].description)}</p>
                     </div>
                 </div>
             )}

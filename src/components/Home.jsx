@@ -32,8 +32,9 @@ export default function Home() {
         <div className="info">
           <SliderAbout />
           <div className="text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Adipisci</span>...</p>
+            <p><span>WORKTONE </span>{t('aboutp1')}</p>
+            <p>{t('aboutp2')}<span>WORKTONE</span>{t('aboutp3')}</p>
+            <p></p>
           </div>
         </div>
       </div>
