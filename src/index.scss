@@ -393,21 +393,31 @@ main {
       justify-content: space-between;
 
       .data {
+        height:800px;
         background: #bb3e22;
-        width: 30%;
+        width: 31%;
         display: flex;
         flex-direction: column;
         gap: 12px;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: space-between;
         padding: 22px;
         h1 {
+          text-align: center;
           font-size: 28px;
+          width: 100%;
           color: var(--bgWheat);
           text-transform: capitalize;
           font-family: Inter;
           font-weight: 600;
           margin: 8px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span{
+          font-size: 20px;
+          opacity: 90%;
+        }
         }
         p {
           color: white;
@@ -417,10 +427,18 @@ main {
           opacity: 80%;
         }
         h3 {
-          font-size: 32px;
+          font-size: 28px;
           text-align: center;
           color: white;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      
           font-family: Inter;
+          span{
+            font-size: 20px;
+            opacity: 80%;
+          }
         }
         img {
           width: 100%;

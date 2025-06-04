@@ -43,26 +43,39 @@ export default function Home() {
       <SliderServicies/>
       </div>
       <div className="packages">
-        <h1>Пакеты</h1>
+        <h1>{t('packagesH1')}</h1>
         <div className="dates">
           <div className="data">
             <img src={card1} alt="" />
-            <h1>Premium</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet recusandae fuga. Odio quisquam adipisci, minima ipsum ipsa exercitationem commodi?</p>
-            <h3>100 €</h3>
+            <h1>{t('data1H1')} <span>{t('data1span')}</span></h1>
+            <p>{t('data1p1')}</p>
+            <p>{t('data1p2')}</p>
+            <p>{t('data1p3')}</p>
+            <p>{t('data1p4')}</p>
+            <h3>29 €<span>({t('dataPrice')})</span> </h3>
           </div>
+        
           <div className="data">
             <img src={card1} alt="" />
-            <h1>Premium</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet recusandae fuga. Odio quisquam adipisci, minima ipsum ipsa exercitationem commodi?</p>
-            <h3>100 €</h3>
+            <h1>{t('data2H1')} <span>{t('data1span')}</span></h1>
+            <p>{t('data2p1')}</p>
+            <p>{t('data2p2')}</p>
+            <p>{t('data2p3')}</p>
+            <p>{t('data2p4')}</p>
+            <h3>49 €<span>/ {t('dataPrice')}</span> </h3>
           </div>
+        
           <div className="data">
             <img src={card1} alt="" />
-            <h1>Premium</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet recusandae fuga. Odio quisquam adipisci, minima ipsum ipsa exercitationem commodi?</p>
-            <h3>100 €</h3>
+            <h1>{t('data3H1')} <span>{t('data1span')}</span></h1>
+            <p>{t('data3p1')}</p>
+            <p>{t('data3p2')}</p>
+            <p>{t('data3p3')}</p>
+            <p>{t('data3p4')}</p>
+            <p>{t('data3p5')}</p>
+            <h3>99 € / <span>{t('dataPrice')}</span> </h3>
           </div>
+        
         </div>
       </div>
       <div className="contact-form">
