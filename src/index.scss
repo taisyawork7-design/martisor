@@ -21,7 +21,7 @@ header {
   backdrop-filter: blur(7px);
   display: flex;
 
-  position: absolute;
+  position: fixed;
   z-index: 5;
   width: 100%;
   justify-content: space-between;
@@ -938,6 +938,7 @@ footer {
 @media (max-width: 850px) {
   header {
     padding: 14px 50px;
+background:rgba(246, 233, 221, 0.662) ;
     nav,
     .change-language {
       display: none;
@@ -947,12 +948,14 @@ footer {
       button {
         background: none;
         border: none;
-        color: white;
+        color: var(--maincolor);
         font-size: 28px;
       }
       .open-menu {
         position: fixed;
         max-width: 100vw;
+        z-index: 5;
+        height: 100vh;
         overflow-x: hidden;
         .overlay {
           width: 100%;

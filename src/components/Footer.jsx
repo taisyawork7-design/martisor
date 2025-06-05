@@ -5,7 +5,9 @@ import email from "../images/email.svg"
 import inst from "../images/instagram.svg"
 import telegram from "../images/telegram.svg"
 import tik from "../images/tik.svg"
+import { useTranslation } from 'react-i18next'
 export default function () {
+  const {t} = useTranslation('header')
   return (
     <footer>
       <div className="footer-top">
@@ -16,10 +18,10 @@ export default function () {
         <div className="navigation">
           <h2>Навигация</h2>
           
-            <a href="">О нас</a>
-            <a href="">Услуги</a>
-            <a href="">Пакеты</a>
-            <a href="">Контакты</a>
+          <a href="#about" onClick={() => setOpenMenu(false)}>{t("about")}</a>
+                            <a href="#services" onClick={() => setOpenMenu(false)}>{t("services")}</a>
+                            <a href="#packages" onClick={() => setOpenMenu(false)}>{t("packages")}</a>
+                            <a href="#contacts" onClick={() => setOpenMenu(false)}>{t("contacts")}</a>
          
 
         </div>
