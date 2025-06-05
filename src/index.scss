@@ -21,7 +21,7 @@ header {
   backdrop-filter: blur(7px);
   display: flex;
 
-  position: fixed;
+  position: absolute;
   z-index: 5;
   width: 100%;
   justify-content: space-between;
@@ -398,7 +398,7 @@ main {
       justify-content: space-between;
 
       .data {
-        height: 700px;
+        height: 730px;
         background: #bb3e22;
         width: 31%;
         display: flex;
@@ -875,6 +875,12 @@ footer {
           }
         }
       }
+      .overlay{
+        .lottie-animation{
+          width: 60%;
+          padding: 50px;
+        }
+      }
     }
   }
   footer {
@@ -939,7 +945,7 @@ footer {
   header {
     padding: 14px 50px;
     
-background:rgba(246, 233, 221, 0.662) ;
+
     nav,
     .change-language {
       display: none;
@@ -949,7 +955,7 @@ background:rgba(246, 233, 221, 0.662) ;
       button {
         background: none;
         border: none;
-        color: var(--maincolor);
+        color: white;
         font-size: 28px;
       }
       .open-menu {
@@ -961,7 +967,7 @@ background:rgba(246, 233, 221, 0.662) ;
         .overlay {
           width: 100%;
           height: 100vh;
-          background: rgba(0, 0, 0, 0.444);
+          background: rgba(0, 0, 0, 0.693);
           position: fixed;
           left: 0;
           z-index: 1;
@@ -1323,6 +1329,12 @@ p{
             width: 100%;
           }
         }
+      }
+    }
+    .overlay{
+      .lottie-animation{
+        width: 70%;
+        padding: 30px;
       }
     }
   }

@@ -36,6 +36,7 @@
     "data3p4": "- Неограниченные тренинги по запросу.",
     "data3p5": "- Персональный куратор для адаптации платформы.",
     "titleForm": "Контакты",
+    "addres": "ул. Дечебал 20/5",
   "name": "Имя",
   "phone": "Телефон",
   "message": "Сообщение",
@@ -46,6 +47,14 @@
   "invalidEmail": "Неверный формат email",
   "phoneRequired": "Введите номер телефона",
   "invalidPhone": "Допустимы только цифры и символы + - ( )"
-}
+ 
+}, "footerSpan": "Pазработано WORKTONE © Все права защищены 2025.",
+"footerText": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+"footerNav": "Навигация",
+"about": "О нас",
+"services": "Услуги",
+"packages": "Пакеты",
+"contacts": "Контакты",
+"bannerText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, possimus."
 
 }

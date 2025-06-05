@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <div className="banner">
         <h1>WORK<span>TONE</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, possimus.</p>
+        <p>{t('bannerText')}</p>
       </div>
       <div className="about" id='about'>
         <h1>{t('aboutH1')}</h1>
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="information">
           <div className="contacts">
             <a href=""><img src={phone} alt="" />+373 876 456</a>
-            <a href=""><img src={location} alt="" />ул. Дечебал 20/5</a>
+            <a href=""><img src={location} alt="" />{t('addres')}</a>
             <a href=""><img src={email} alt="" />worktone2025@gmail.com</a>
             <div className="media">
               <a href=""><img src={inst} alt="" /></a>

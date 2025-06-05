@@ -7,16 +7,16 @@ import telegram from "../images/telegram.svg"
 import tik from "../images/tik.svg"
 import { useTranslation } from 'react-i18next'
 export default function () {
-  const {t} = useTranslation('header')
+  const {t} = useTranslation('main')
   return (
     <footer>
       <div className="footer-top">
         <div className="logo">
           <h1>WORK <span>TONE</span></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>{t('footerText')}</p>
         </div>
         <div className="navigation">
-          <h2>Навигация</h2>
+          <h2>{t('footerNav')}</h2>
           
           <a href="#about" onClick={() => setOpenMenu(false)}>{t("about")}</a>
                             <a href="#services" onClick={() => setOpenMenu(false)}>{t("services")}</a>
@@ -26,10 +26,10 @@ export default function () {
 
         </div>
         <div className="contacts">
-          <h2>Контакты</h2>
+          <h2>{t('titleForm')}</h2>
           
             <a href=""><img src={phone} alt="" />+373 876 456</a>
-            <a href=""><img src={location} alt="" />ул. Дечебал 20/5</a>
+            <a href=""><img src={location} alt="" />{t('addres')}</a>
             <a href=""><img src={email} alt="" />worktone2025@gmail.com</a>
             <div className="media">
               <a href=""><img src={inst} alt="" /></a>
@@ -40,7 +40,7 @@ export default function () {
         </div>
       </div>
       <div className="footer-span">
-        <h3>Pазработано WORKTONE © Все права защищены 2025.</h3>
+        <h3>{t('footerSpan')}</h3>
       </div>
     </footer>
   )
