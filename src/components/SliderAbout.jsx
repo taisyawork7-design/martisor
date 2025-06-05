@@ -19,7 +19,7 @@ export default function SliderAbout() {
     swipe: true,
 touchMove: true,
     speed: 3000,
-    autoplaySpeed:3000,
+    autoplaySpeed:800,
     cssEase: "linear",
     arrows: false,
   
@@ -34,7 +34,7 @@ touchMove: true,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 850,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -42,7 +42,7 @@ touchMove: true,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

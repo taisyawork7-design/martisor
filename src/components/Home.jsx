@@ -27,7 +27,7 @@ export default function Home() {
         <h1>WORK<span>TONE</span></h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, possimus.</p>
       </div>
-      <div className="about">
+      <div className="about" id='about'>
         <h1>{t('aboutH1')}</h1>
         <div className="info">
           <SliderAbout />
@@ -38,47 +38,59 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="services">
+      <div className="services" id='services'>
         <h1>{t('servicesTitle')}</h1>
       <SliderServicies/>
       </div>
-      <div className="packages">
+      <div className="packages" id='packages'>
         <h1>{t('packagesH1')}</h1>
         <div className="dates">
           <div className="data">
             <img src={card1} alt="" />
+            <div className="text">
             <h1>{t('data1H1')} <span>{t('data1span')}</span></h1>
+           
             <p>{t('data1p1')}</p>
             <p>{t('data1p2')}</p>
             <p>{t('data1p3')}</p>
             <p>{t('data1p4')}</p>
+            
             <h3>29 €<span>({t('dataPrice')})</span> </h3>
+            </div>
           </div>
         
           <div className="data">
             <img src={card1} alt="" />
+            <div className="text">
             <h1>{t('data2H1')} <span>{t('data1span')}</span></h1>
+            
             <p>{t('data2p1')}</p>
             <p>{t('data2p2')}</p>
             <p>{t('data2p3')}</p>
             <p>{t('data2p4')}</p>
+           
             <h3>49 €<span>/ {t('dataPrice')}</span> </h3>
+            </div>
           </div>
         
           <div className="data">
             <img src={card1} alt="" />
+            <div className="text">
             <h1>{t('data3H1')} <span>{t('data1span')}</span></h1>
+        
             <p>{t('data3p1')}</p>
             <p>{t('data3p2')}</p>
             <p>{t('data3p3')}</p>
             <p>{t('data3p4')}</p>
             <p>{t('data3p5')}</p>
+           
             <h3>99 € / <span>{t('dataPrice')}</span> </h3>
+            </div>
           </div>
         
         </div>
       </div>
-      <div className="contact-form">
+      <div className="contact-form" id='contacts'>
         <h1>{t('titleForm')}</h1>
         <div className="information">
           <div className="contacts">

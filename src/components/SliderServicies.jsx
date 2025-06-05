@@ -53,11 +53,12 @@ export default function SliderServicies() {
                 settings: { slidesToShow: 3 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 850,
                 settings: { slidesToShow: 2 },
+                arrows: false,
             },
             {
-                breakpoint: 480,
+                breakpoint: 600,
                 settings: { slidesToShow: 1 },
             },
         ],
