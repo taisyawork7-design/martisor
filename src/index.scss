@@ -399,40 +399,42 @@ main {
       justify-content: space-between;
 
       .data {
-        height: 730px;
+       height: 500px;
         background: #bb3e22c0;
-        
-        width: 31%;
+
+        width: 32%;
         display: flex;
         flex-direction: column;
         gap: 12px;
 
         padding: 22px;
+        h1 {
+          text-align: center;
+          font-size: 28px;
+          width: 100%;
+          padding: 0;
+          color: white;
+          text-transform: uppercase;
+          font-family: Inter;
+          font-weight: 600;
+       
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          span {
+            font-size: 20px;
+            opacity: 90%;
+          }
+        }
+
         .text {
           display: flex;
-          height: 480px;
+        height: 100%;
           flex-direction: column;
           justify-content: space-between;
 
           gap: 12px;
-          h1 {
-            text-align: center;
-            font-size: 28px;
-            width: 100%;
-            color: white;
-            text-transform: uppercase;
-            font-family: Inter;
-            font-weight: 600;
-            margin: 8px 0 0 0;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            span {
-              font-size: 20px;
-              opacity: 90%;
-            }
-          }
-
+       
           p {
             color: white;
             font-family: comfortaa;
@@ -456,10 +458,7 @@ main {
             }
           }
         }
-        img {
-          width: 100%;
-          height: 200px;
-        }
+       
       }
     }
   }
@@ -829,17 +828,18 @@ footer {
       .dates {
         .data {
           width: 32%;
-
+height: 530px;
           padding: 10px 12px;
           gap: 6px;
-          .text {
-            h1 {
-              font-size: 22px;
-              gap: 6px;
-              span {
-                font-size: 18px;
-              }
+          h1 {
+            font-size: 22px;
+            gap: 6px;
+            span {
+              font-size: 18px;
             }
+          }
+          .text {
+           
             p {
               font-size: 16px;
             }
@@ -955,7 +955,7 @@ footer {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
   header {
     padding: 14px 50px;
     
@@ -1118,24 +1118,26 @@ footer {
         flex-wrap: wrap;
         .data {
           width:100%;
-flex-direction: row;
+
 justify-content: space-between;
 align-items: center;
+height:auto;
           padding: 10px 12px;
-          height: auto;
+         
           gap: 6px;
+          h1 {
+            font-size: 22px;
+            gap: 6px;
+            span {
+              font-size: 18px;
+            }
+          }
           .text {
             width: 60%;
             justify-content: space-between;
             height:auto;
             align-items: center;
-            h1 {
-              font-size: 22px;
-              gap: 6px;
-              span {
-                font-size: 18px;
-              }
-            }
+            
             p{
               text-align: center;
             }

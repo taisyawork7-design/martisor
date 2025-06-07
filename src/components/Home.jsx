@@ -46,9 +46,9 @@ export default function Home() {
         <h1>{t('packagesH1')}</h1>
         <div className="dates">
           <div className="data">
-          
+          <h1>{t('data1H1')} <span>{t('data1span')}</span></h1>
             <div className="text">
-            <h1>{t('data1H1')} <span>{t('data1span')}</span></h1>
+            
            
             <p>{t('data1p1')}</p>
             <p>{t('data1p2')}</p>
@@ -60,9 +60,9 @@ export default function Home() {
           </div>
         
           <div className="data">
-           
+          <h1>{t('data2H1')} <span>{t('data1span')}</span></h1>
             <div className="text">
-            <h1>{t('data2H1')} <span>{t('data1span')}</span></h1>
+            
             
             <p>{t('data2p1')}</p>
             <p>{t('data2p2')}</p>
@@ -74,9 +74,9 @@ export default function Home() {
           </div>
         
           <div className="data">
-           
+          <h1>{t('data3H1')} <span>{t('data1span')}</span></h1>
             <div className="text">
-            <h1>{t('data3H1')} <span>{t('data1span')}</span></h1>
+           
         
             <p>{t('data3p1')}</p>
             <p>{t('data3p2')}</p>
