@@ -4,9 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --maincolor: #bb3e22;
+  --maincolor:  #b94a2f;
   --olive: #044e15;
-  --bgWheat: rgb(246, 233, 221);
+  --bgWheat: #f5f6e8;
   --bgOrange: #ff4500;
 }
 
@@ -385,6 +385,7 @@ main {
       font-weight: 600;
       font-size: 62px;
       color: var(--maincolor);
+      
       font-family: Arial, Helvetica, sans-serif;
       display: flex;
       align-items: center;
@@ -399,7 +400,8 @@ main {
 
       .data {
         height: 730px;
-        background: #bb3e22;
+        background: #bb3e22c0;
+        
         width: 31%;
         display: flex;
         flex-direction: column;
@@ -418,7 +420,7 @@ main {
             font-size: 28px;
             width: 100%;
             color: white;
-            text-transform: capitalize;
+            text-transform: uppercase;
             font-family: Inter;
             font-weight: 600;
             margin: 8px 0 0 0;
@@ -469,7 +471,7 @@ main {
     flex-direction: column;
     h1 {
       font-weight: 600;
-      font-size: 62px;
+      font-size: 42px;
       color: var(--maincolor);
       font-family: Arial, Helvetica, sans-serif;
       margin-bottom: 36px;
@@ -479,8 +481,8 @@ main {
       width: 100%;
       display: flex;
       justify-content: center;
-      gap: 120px;
-      align-items: center;
+      gap: 220px;
+      align-items: top;
       .contacts {
         display: flex;
         flex-direction: column;
@@ -514,8 +516,20 @@ main {
       }
       .form {
         width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        h2{
+          font-weight: 600;
+         text-transform: uppercase;
+      font-size: 42px;
+      color: var(--olive);
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 36px;
+        }
         form {
-          width: 100%;
+          width: 80%;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -562,7 +576,7 @@ main {
             border-radius: 8px;
             border: none;
             cursor: pointer;
-            background: var(--maincolor);
+            background: var(--olive);
             color: white;
           }
         }
@@ -1295,6 +1309,15 @@ p{
     .slider-servicies{
       .card{
        
+      }
+      .open-card{
+        .content{
+          padding: 10px;
+        width: 95%;
+        p{
+          font-size: 16px;
+        }  
+        }
       }
     }
   }

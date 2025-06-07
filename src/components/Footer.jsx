@@ -31,12 +31,7 @@ export default function () {
             <a href=""><img src={phone} alt="" />+373 876 456</a>
             <a href=""><img src={location} alt="" />{t('addres')}</a>
             <a href=""><img src={email} alt="" />worktone2025@gmail.com</a>
-            <div className="media">
-              <a href=""><img src={inst} alt="" /></a>
-              <a href=""><img src={telegram} alt="" /></a>
-              <a href=""><img src={tik} alt="" /></a>
-            
-          </div>
+           
         </div>
       </div>
       <div className="footer-span">

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
-import card1 from "../images/analytics.jpg";
-import card2 from "../images/psychologist.jpg";
-import card3 from "../images/quest.jpg";
-import card4 from "../images/training.jpg";
-import card5 from "../images/vr.jpg";
+import card1 from "../images/analytic.jpg";
+import card2 from "../images/anonim.jpg";
+import card5 from "../images/exc.jpg";
+import card3 from "../images/tren.jpg";
+import card4 from "../images/vr.jpg";
 import arrow from "../images/arrow_next.svg";
 import close from "../images/close.svg";
 

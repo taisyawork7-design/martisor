@@ -56,6 +56,7 @@ export default function SimpleForm() {
 
     return (
         <div className="form" onClick={(e) => e.stopPropagation()}>
+            <h2>{t('formTitle')}</h2>
             <form onSubmit={handleSubmit}>
                 <div className="input">
                     <input

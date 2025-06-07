@@ -1,7 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import quest from "../images/quest.jpg"
-import vr from "../images/vr.jpg"
+import slide1 from "../images/mental-health-care-sketch-diagram.jpg"
+import slide2 from "../images/people-working-tech-brand-together (1).jpg"
+import slide3 from "../images/people-working-tech-brand-together.jpg"
+import slide4 from "../images/woman-holding-origami-object.jpg"
+import slide5 from "../images/woman-using-special-made-paper-origami.jpg"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -19,7 +22,7 @@ export default function SliderAbout() {
     swipe: true,
 touchMove: true,
     speed: 3000,
-    autoplaySpeed:800,
+    autoplaySpeed:1000,
     cssEase: "linear",
     arrows: false,
   
@@ -54,25 +57,24 @@ touchMove: true,
     <div className="slider-container">
       <Slider {...settings} >
         <div>
-         <img src={quest} alt="" />
+         <img src={slide2} alt="" />
         </div>
         <div>
-        <img src={vr} alt="" />
+        <img src={slide1} alt="" />
         </div>
        
         <div>
-         <img src={quest} alt="" />
+         <img src={slide3} alt="" />
         </div>
         <div>
-        <img src={vr} alt="" />
+        <img src={slide4} alt="" />
         </div>
        
         <div>
-         <img src={quest} alt="" />
+         <img src={slide5} alt="" />
         </div>
-        <div>
-        <img src={vr} alt="" />
-        </div>
+       
+        
        
       </Slider>
     </div>

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import card1 from "../images/analytics.jpg"
-import card2 from "../images/psychologist.jpg"
-import card3 from "../images/quest.jpg"
-import card4 from "../images/training.jpg"
+import card2 from "../images/anonim.jpg"
+import card3 from "../images/exc.jpg"
+import card4 from "../images/quest.jpg"
 import card5 from "../images/vr.jpg"
 import phone from "../images/phone.svg"
 import location from "../images/location.svg"
@@ -32,8 +32,8 @@ export default function Home() {
         <div className="info">
           <SliderAbout />
           <div className="text">
-            <p><span>WORKTONE </span>{t('aboutp1')}</p>
-            <p>{t('aboutp2')}<span>WORKTONE</span>{t('aboutp3')}</p>
+            <p><span> WORKTONE </span>{t('aboutp1')}</p>
+            <p>{t('aboutp2')}<span> WORKTONE</span>{t('aboutp3')}</p>
             <p></p>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
         <h1>{t('packagesH1')}</h1>
         <div className="dates">
           <div className="data">
-            <img src={card1} alt="" />
+          
             <div className="text">
             <h1>{t('data1H1')} <span>{t('data1span')}</span></h1>
            
@@ -55,12 +55,12 @@ export default function Home() {
             <p>{t('data1p3')}</p>
             <p>{t('data1p4')}</p>
             
-            <h3>29 €<span>({t('dataPrice')})</span> </h3>
+            <h3>29 €<span>{t('dataPrice')}</span> </h3>
             </div>
           </div>
         
           <div className="data">
-            <img src={card1} alt="" />
+           
             <div className="text">
             <h1>{t('data2H1')} <span>{t('data1span')}</span></h1>
             
@@ -69,12 +69,12 @@ export default function Home() {
             <p>{t('data2p3')}</p>
             <p>{t('data2p4')}</p>
            
-            <h3>49 €<span>/ {t('dataPrice')}</span> </h3>
+            <h3>49 €<span> {t('dataPrice')}</span> </h3>
             </div>
           </div>
         
           <div className="data">
-            <img src={card1} alt="" />
+           
             <div className="text">
             <h1>{t('data3H1')} <span>{t('data1span')}</span></h1>
         
@@ -84,16 +84,18 @@ export default function Home() {
             <p>{t('data3p4')}</p>
             <p>{t('data3p5')}</p>
            
-            <h3>99 € / <span>{t('dataPrice')}</span> </h3>
+            <h3>99 € <span>{t('dataPrice')}</span> </h3>
             </div>
           </div>
         
         </div>
       </div>
       <div className="contact-form" id='contacts'>
-        <h1>{t('titleForm')}</h1>
+        
         <div className="information">
+        
           <div className="contacts">
+          <h1>{t('titleForm')}</h1>
             <a href=""><img src={phone} alt="" />+373 876 456</a>
             <a href=""><img src={location} alt="" />{t('addres')}</a>
             <a href=""><img src={email} alt="" />worktone2025@gmail.com</a>

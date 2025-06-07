@@ -48,12 +48,13 @@
       "invalidPhone": "Only numbers and symbols + - ( ) are allowed"
     },
     "footerSpan": "Developed by WORKTONE © All rights reserved 2025.",
-    "footerText": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    "footerText": "Strong communication - strong business",
     "footerNav": "Navigation",
     "about": "About",
     "services": "Services",
     "packages": "Packages",
     "contacts": "Contacts",
-    "bannerText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, possimus."
+    "bannerText": "Strong communication - strong business",
+    "formTitle": "Contact us"
   }
   
