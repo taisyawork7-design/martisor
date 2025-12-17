@@ -81,7 +81,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="artists" id="artists"></div>
+      <div className="artists" id="artists">
+        <div className="artists__lists">.</div>
+      </div>
 
       <div className="contact-form" id="contacts">
         <div className="information">
