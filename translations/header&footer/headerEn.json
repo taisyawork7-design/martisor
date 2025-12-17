@@ -1,7 +1,6 @@
 {
-    "about": "About us",
-    "services": "Services",
-    "packages": "Packages",
-    "contacts": "Contacts"
-  }
-  
+  "about": "About the event",
+  "activity": "Activities",
+  "artist": "Artists",
+  "location": "Location"
+}

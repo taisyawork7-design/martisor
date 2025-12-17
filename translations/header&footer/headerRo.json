@@ -1,7 +1,6 @@
 {
-    "about": "Despre noi",
-    "services": "Servicii",
-    "packages": "Pachete",
-    "contacts": "Contacte"
-  }
-  
+  "about": "Despre eveniment",
+  "activity": "Activități",
+  "artist": "Artiști",
+  "location": "Locație"
+}

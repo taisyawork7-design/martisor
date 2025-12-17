@@ -1,6 +1,6 @@
 {
-  "about": "О нас",
-  "services": "Услуги",
-  "packages": "Пакеты",
-  "contacts": "Контакты"
+  "about": "О мероприятии",
+  "activity": "Активности",
+  "artist": "Артисты",
+  "location": "Локация"
 }
