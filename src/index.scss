@@ -298,9 +298,11 @@ main {
       padding: 0 100px;
       gap: 20px;
       flex-direction: column;
-      h3 {
+      span {
         font-size: 32px;
         color: black;
+        font-family: Stolzl_light;
+        text-transform: uppercase;
       }
       p {
         font-size: 24px;
@@ -721,25 +723,24 @@ footer {
 }
 .slider-container {
   width: 100%;
-  height: 480px;
+  height: 400px;
   margin: 0 auto;
-  background-image: url(../src/images/carpet.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 40px 0;
+
   .slick-slide {
-    padding: 0 4px;
+    padding: 0 8px;
   }
   div:focus {
     outline: none;
     border: none;
   }
   &__img {
-    background: var(--white);
-    padding: 5px;
     height: 400px;
     border-radius: 8px;
+    background-image: url(../src/images/carpet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
   }
 
   img {

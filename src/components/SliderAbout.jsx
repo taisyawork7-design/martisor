@@ -12,7 +12,7 @@ export default function SliderAbout() {
     dots: false,
     infinite: true,
     className: "center",
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,

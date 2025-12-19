@@ -95,7 +95,7 @@ export default function Home() {
         <h1>{t("showTitle")}</h1>
         <SliderAbout />
         <div className="slider__text">
-          <h3>{t("showDate")}</h3>
+          <span>{t("showDate")}</span>
           <p>{t("showText")}</p>
         </div>
       </div>
