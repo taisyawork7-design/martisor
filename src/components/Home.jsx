@@ -44,7 +44,7 @@ export default function Home() {
                 RED & <span>WHITE</span>{" "}
               </p>
             </h1>
-            <h2>Feel the Pulse of Spring & Tradition</h2>
+            <h2>{t("slogan")}</h2>
             <a href="">Great National Assembly Square, Chișinau</a>
           </div>
         </div>
@@ -277,7 +277,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <SliderAbout />
       <div className="contact-form" id="contacts">
         <div className="information">
           <div className="contacts">
