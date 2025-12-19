@@ -13,9 +13,17 @@ import left from "../images/left.svg";
 import right from "../images/right.svg";
 import carpetLine from "../images/carpetLine.png";
 import sticker from "../images/sticker.svg";
+import { Arrow } from "../images/Arrow";
+import subcorpati from "../images/subcorpati.png";
+import lupii from "../images/lupii.png";
+import dj from "../images/dj.png";
+import flueras from "../images/flueras.png";
+import rimes from "../images/rimes.png";
 
 export default function Home() {
   const { t } = useTranslation("main");
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
   return (
     <main>
@@ -48,7 +56,7 @@ export default function Home() {
           <img src={sticker} alt="" />
           <div className="about__header__text">
             <h1>
-              {t("aboutH1")} MĂRȚIȘOR: <span>RED</span> & WHITE ?
+              {t("aboutH1")} MĂRȚIȘOR: <br /> <span>RED</span> & WHITE ?
             </h1>
             <p>{t("aboutp1")}</p>
           </div>
@@ -82,9 +90,80 @@ export default function Home() {
         </div>
       </div>
       <div className="artists" id="artists">
-        <div className="artists__lists">.</div>
-      </div>
+        <h1>{t("activityTitle")}</h1>
+        <div className="artists__lists">
+          <div className="artists__lists__list">
+            <button onClick={() => setIsOpen(!isOpen)}>
+              {t("activityDay1")}
+              <Arrow className={isOpen ? "arrow arrow--open" : "arrow"} />
+            </button>
 
+            <div
+              className={
+                isOpen
+                  ? "artists__lists__list__open artists__lists__list__open--active"
+                  : "artists__lists__list__open"
+              }
+            >
+              <div className="artists__lists__list__open__item">
+                <img src={subcorpati} alt="" />
+                <div className="artists__lists__list__open__item__text">
+                  <h1>Subcarpați </h1>
+                  <p>{t("activityDay1P1")}</p>
+                </div>
+              </div>
+              <div className="artists__lists__list__open__item">
+                <div className="artists__lists__list__open__item__text">
+                  <h1>Lupii lui Calancea </h1>
+                  <p>{t("activityDay1P2")}</p>
+                </div>
+                <img src={lupii} alt="" />
+              </div>
+              <div className="artists__lists__list__open__item">
+                <img src={dj} alt="" />
+                <div className="artists__lists__list__open__item__text">
+                  <h1>DJ set </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="artists__lists__list">
+            <button onClick={() => setIsOpen2(!isOpen2)}>
+              {t("activityDay2")}
+              <Arrow className={isOpen2 ? "arrow arrow--open" : "arrow"} />
+            </button>
+
+            <div
+              className={
+                isOpen2
+                  ? "artists__lists__list__open artists__lists__list__open--active"
+                  : "artists__lists__list__open"
+              }
+            >
+              <div className="artists__lists__list__open__item">
+                <img src={flueras} alt="" />
+                <div className="artists__lists__list__open__item__text">
+                  <h1>Flueraș </h1>
+                  <p>{t("activityDay2P1")}</p>
+                </div>
+              </div>
+              <div className="artists__lists__list__open__item">
+                <div className="artists__lists__list__open__item__text">
+                  <h1>Irina Rimes</h1>
+                  <p>{t("activityDay2P2")}</p>
+                </div>
+                <img src={rimes} alt="" />
+              </div>
+              <div className="artists__lists__list__open__item">
+                <img src={dj} alt="" />
+                <div className="artists__lists__list__open__item__text">
+                  <h1>DJ set </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="contact-form" id="contacts">
         <div className="information">
           <div className="contacts">

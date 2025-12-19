@@ -278,6 +278,96 @@ main {
       }
     }
   }
+  .artists {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 100px;
+    background: var(--bordo);
+    gap: 80px;
+    h1 {
+      font-size: 96px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    &__lists {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      flex-direction: column;
+      width: 100%;
+      &__list {
+        width: 100%;
+        background: var(--white);
+        border-radius: 8px;
+        cursor: pointer;
+        button {
+          cursor: pointer;
+          background: none;
+          color: black;
+          border: none;
+          width: 100%;
+          text-transform: uppercase;
+          font-size: 56px;
+          padding: 46px 80px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          svg {
+            width: 70px;
+            height: 70px;
+          }
+          .arrow {
+            transition-duration: 0.3s;
+          }
+          .arrow--open {
+            transform: rotate(-180deg);
+          }
+        }
+        &__open {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transform: translateY(-8px);
+          transition: max-height 0.4s ease, opacity 0.3s ease,
+            transform 0.3s ease;
+          &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20%;
+            img {
+              width: 40%;
+            }
+            &__text {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              gap: 26px;
+              width: 50%;
+              h1 {
+                font-size: 42px;
+                color: black;
+              }
+              p {
+                font-size: 32px;
+                font-family: Stolzl_light;
+              }
+            }
+          }
+          &--active {
+            max-height: 100%;
+            opacity: 1;
+            transform: translateY(0);
+            padding: 60px 80px;
+          }
+        }
+      }
+    }
+  }
 
   .contact-form {
     padding: 50px 100px;

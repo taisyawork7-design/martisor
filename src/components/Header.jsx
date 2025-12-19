@@ -4,6 +4,7 @@ import i18n from "../../i18n";
 import arrow from "../images/arrow.svg";
 import { TbMenu2 } from "react-icons/tb";
 import martisor from "../images/martisor.svg";
+import { Arrow } from "../images/Arrow";
 
 export default function Header({ onLanguageChange }) {
   const { t } = useTranslation("header");
@@ -60,7 +61,7 @@ export default function Header({ onLanguageChange }) {
       </nav>
       <div className="change-language">
         <button onClick={() => setDropdownOpen(!dropdownOpen)}>
-          {languages[selectedLanguage]} <img src={arrow} alt="" />{" "}
+          {languages[selectedLanguage]} <Arrow />
         </button>
         {dropdownOpen && (
           <div className="dropdown">
