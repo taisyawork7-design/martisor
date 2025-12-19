@@ -54,8 +54,9 @@ export default function Header({ onLanguageChange }) {
       </div>
       <nav>
         <a href="#about">{t("about")}</a>
+        <a href="#about">{t("show")}</a>
         <a href="#artists">{t("artist")}</a>
-        <a href="#packages">{t("activity")}</a>
+        <a href="#activity">{t("activity")}</a>
         <a href="#contacts">{t("location")}</a>
         <a href="#contacts">+37376574645</a>
       </nav>

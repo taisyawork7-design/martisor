@@ -43,9 +43,10 @@ header {
   position: absolute;
   z-index: 5;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 30px 120px;
+  padding: 30px 0;
+  gap: 100px;
   .logo {
     display: flex;
     align-items: center;
@@ -71,6 +72,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 50px;
+
     a {
       color: var(--maincolor);
       text-decoration: none;
@@ -364,6 +366,82 @@ main {
             transform: translateY(0);
             padding: 60px 80px;
           }
+        }
+      }
+    }
+  }
+  .activity {
+    background: var(--white);
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    h1 {
+      font-size: 96px;
+      color: var(--bordo);
+    }
+    &__lists {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      &__list {
+        width: 100%;
+        border-top: 1px solid var(--bordo);
+        border-bottom: 1px solid var(--bordo);
+        cursor: pointer;
+        button {
+          cursor: pointer;
+          background: none;
+          border: none;
+          width: 100%;
+          text-transform: uppercase;
+          font-size: 56px;
+          padding: 46px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          svg {
+            width: 70px;
+            height: 70px;
+          }
+          .arrow {
+            transition-duration: 0.3s;
+          }
+          .arrow--open {
+            transform: rotate(-180deg);
+          }
+        }
+        &__open {
+          display: flex;
+          flex-direction: column;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transform: translateY(-8px);
+          transition: max-height 0.4s ease, opacity 0.3s ease,
+            transform 0.3s ease;
+          &__item {
+            border-bottom: 1px solid var(--bordo);
+            padding: 54px 0;
+            &:last-child {
+              border-bottom: none;
+            }
+            p {
+              font-size: 32px;
+              font-family: Stolzl_light;
+            }
+          }
+          &--active {
+            max-height: 100%;
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        &:nth-child(2) {
+          border-top: none;
         }
       }
     }
