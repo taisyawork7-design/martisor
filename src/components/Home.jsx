@@ -91,6 +91,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="slider" id="show">
+        <h1>{t("showTitle")}</h1>
+        <SliderAbout />
+        <div className="slider__text">
+          <h3>{t("showDate")}</h3>
+          <p>{t("showText")}</p>
+        </div>
+      </div>
       <div className="artists" id="artists">
         <h1>{t("artistsTitle")}</h1>
         <div className="artists__lists">
@@ -277,7 +285,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <SliderAbout />
+
       <div className="contact-form" id="contacts">
         <div className="information">
           <div className="contacts">
