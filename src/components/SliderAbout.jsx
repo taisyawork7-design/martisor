@@ -1,9 +1,9 @@
 import Slider from "react-slick";
-import slide1 from "../images/mental-health-care-sketch-diagram.jpg";
-import slide2 from "../images/people-working-tech-brand-together (1).jpg";
-import slide3 from "../images/people-working-tech-brand-together.jpg";
-import slide4 from "../images/woman-holding-origami-object.jpg";
-import slide5 from "../images/woman-using-special-made-paper-origami.jpg";
+import slide1 from "../images/slide1.png";
+import slide2 from "../images/slide2.png";
+import slide3 from "../images/slide3.png";
+import slide4 from "../images/slide4.png";
+import slide5 from "../images/slide5.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -54,14 +54,14 @@ export default function SliderAbout() {
     <div className="slider-container">
       <Slider {...settings}>
         <div className="slider-container__img">
-          <img src={slide2} alt="" />
-        </div>
-        <div className="slider-container__img">
           <img src={slide1} alt="" />
         </div>
 
         <div className="slider-container__img">
           <img src={slide3} alt="" />
+        </div>
+        <div className="slider-container__img">
+          <img src={slide2} alt="" />
         </div>
         <div className="slider-container__img">
           <img src={slide4} alt="" />

@@ -19,6 +19,18 @@ import lupii from "../images/lupii.png";
 import dj from "../images/dj.png";
 import flueras from "../images/flueras.png";
 import rimes from "../images/rimes.png";
+import masterclass from "../images/masterclass1.png"
+import bar2 from "../images/bar2.png"
+import partner1 from "../images/partner1.png"
+import partner2 from "../images/partner2.png"
+import partner3 from "../images/partner3.jpg"
+import partner4 from "../images/partner4.jpg"
+import partner5 from "../images/partner5.png"
+import partner6 from "../images/partner6.jpg"
+import partner7 from "../images/partner 7.webp"
+import partner8 from "../images/partner8.webp"
+import partner9 from "../images/partner9.png"
+import partner10 from "../images/partner10.png"
 
 export default function Home() {
   const { t } = useTranslation("main");
@@ -285,38 +297,57 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="contact-form" id="contacts">
-        <div className="information">
-          <div className="contacts">
-            <h1>{t("titleForm")}</h1>
-            <a href="">
-              <img src={phone} alt="" />
-              +373 876 456
-            </a>
-            <a href="">
-              <img src={location} alt="" />
-              {t("addres")}
-            </a>
-            <a href="">
-              <img src={email} alt="" />
-              worktone2025@gmail.com
-            </a>
-            <div className="media">
-              <a href="">
-                <img src={inst} alt="" />
-              </a>
-              <a href="">
-                <img src={telegram} alt="" />
-              </a>
-              <a href="">
-                <img src={tik} alt="" />
-              </a>
-            </div>
-          </div>
-          <SimpleForm />
+      <div className="zone">
+        <div className="zone__item">
+          <img src={bar2} alt="" />
+          <h2>Bar Zone</h2>
+          <p>{t("barZone")}</p>
+        </div>
+        <div className="zone__item">
+          <img src={bar2} alt="" />
+          <h2>Food Zone</h2>
+          <p>{t("foodZone")}</p>
+        </div>
+        <div className="zone__item">
+          <img src={bar2} alt="" />
+          <h2>Fair Zone</h2>
+          <p>{t("fairZone")}</p>
+        </div>
+        <div className="zone__item">
+          <img src={bar2} alt="" />
+          <h2>Sitting Zone</h2>
+          <p>{t("sittingZone")}</p>
+        </div>
+        <div className="zone__item">
+          <img src={bar2} alt="" />
+          <h2>Kids Zone</h2>
+          <p>{t("kidsZone")}</p>
+        </div>
+        <div className="zone__item">
+          <img src={masterclass} alt="" />
+          <h2>Master Class Zone</h2>
+          <p>{t("masterClassZone")}</p>
         </div>
       </div>
+      <div className="partners">
+        <div className="partners__border">
+        <h1>{t("partners")}</h1>
+        <div className="partners__border__items">
+<img src={partner1} alt="" />
+<img src={partner2} alt="" />
+<img src={partner3} alt="" />
+<img src={partner6} alt="" />
+<img src={partner7} alt="" />
+<img src={partner5} alt="" />
+<img src={partner4} alt="" />
+<img src={partner8} alt="" />
+<img src={partner9} alt="" />
+<img src={partner10} alt="" />
+
+        </div>
+        </div>
+      </div>
+
     </main>
   );
 }
