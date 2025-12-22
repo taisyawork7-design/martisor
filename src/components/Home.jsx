@@ -281,7 +281,10 @@ export default function Home() {
                 <p>{t("activityDay2P6")}</p>
               </div>
 
-              <div className="activity__lists__list__open__item">
+              <div
+                className="activity__lists__list__open__item"
+                style={{ color: "#7f0504" }}
+              >
                 <p>{t("activityDay2P7")}</p>
               </div>
 
@@ -366,7 +369,6 @@ export default function Home() {
         </a>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.2121986560574!2d28.829500176580574!3d47.02433657114222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3387c07c8d%3A0xd2ec02fd2daf3f58!2zUGlhyJthIE1hcmlpIEFkdW7Eg3JpIE5hyJtpb25hbGUsIENoaciZaW7Eg3UsINCc0L7Qu9C00L7QstCw!5e1!3m2!1sru!2s!4v1766384832750!5m2!1sru!2s"
-          allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

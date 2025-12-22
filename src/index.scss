@@ -157,7 +157,7 @@ main {
     justify-content: space-between;
     padding: 260px 100px 100px 100px;
     img {
-      width: 300px;
+      width: 22%;
     }
     &__text {
       display: flex;
@@ -483,7 +483,6 @@ main {
   }
   .zone {
     display: flex;
-
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 70px 100px;
@@ -580,7 +579,7 @@ main {
       &__items {
         padding-top: 70px;
         display: flex;
-        align-items: center;
+        align-items: top;
         justify-content: center;
         flex-wrap: wrap;
         column-gap: 140px;
@@ -740,8 +739,7 @@ main {
   justify-content: center;
 
   &__inner {
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
   }
 
   &__img {
@@ -793,11 +791,11 @@ main {
   }
 
   .slick-prev {
-    left: -120px;
+    left: -100px;
   }
 
   .slick-next {
-    right: -120px;
+    right: -100px;
   }
 }
 
@@ -832,6 +830,7 @@ main {
     border: none;
   }
 }
+
 footer {
   background: var(--white);
   .footer-top {
@@ -932,226 +931,246 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1450px) {
   header {
-    padding: 16px 60px;
-    h1 {
-      font-size: 28px;
+    padding: 30px 70px;
+    gap: 40px;
+    .logo {
+      h1 {
+        font-size: 28px;
+      }
+      img {
+        width: 70px;
+        height: 70px;
+      }
     }
     nav {
-      a {
-        font-size: 16px;
-      }
-    }
-    .change-language {
-      button {
-        font-size: 16px;
-      }
+      gap: 30px;
     }
   }
   main {
     .banner {
-      height: 700px;
+      height: 75vh;
+      padding: 100px 70px 50px 70px;
 
-      h1 {
-        font-size: 76px;
-      }
-      p {
-        font-size: 24px;
-        width: 70%;
+      &__text {
+        &__date {
+          p {
+            font-size: 18px;
+          }
+          h2 {
+            font-size: 22px;
+          }
+        }
+        &__info {
+          h1 {
+            font-size: 72px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+          a {
+            font-size: 16px;
+          }
+        }
       }
     }
     .about {
-      padding: 40px 70px;
-      h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-      }
-      .info {
-        .text {
+      padding: 50px 70px;
+      &__header {
+        gap: 50px;
+
+        &__text {
+          h1 {
+            font-size: 72px;
+            line-height: 96px;
+          }
           p {
             font-size: 20px;
-            line-height: 28px;
           }
         }
       }
-    }
-    .services {
-      padding: 40px 70px;
-      h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-      }
-      .slider-servicies {
-        padding-bottom: 40px;
-        .slick-slide {
-          padding: 0 10px;
-        }
-        .card {
-          padding: 12px;
-          gap: 12px;
+      &__statistic {
+        margin-top: 30px;
+        gap: 30px;
+        &__stat {
+          gap: 10px;
           h2 {
-            font-size: 22px;
-            text-align: center;
+            font-size: 64px;
           }
-          button {
-            font-size: 16px;
-            img {
-              width: 20px;
-              object-fit: contain;
-              height: 20px;
-            }
-          }
-        }
-        .slick-dots {
-          bottom: -45px;
-        }
-        .open-card {
-          .content {
-            width: 70%;
-            img {
-              width: 50%;
-            }
-          }
-        }
-      }
-    }
-    .packages {
-      padding: 40px 70px;
-      h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-      }
-      .dates {
-        .data {
-          width: 32%;
-          height: 530px;
-          padding: 10px 12px;
-          gap: 6px;
-          h1 {
-            font-size: 22px;
-            gap: 6px;
-            span {
-              font-size: 18px;
-            }
-          }
-          .text {
-            p {
-              font-size: 16px;
-            }
-            h3 {
-              font-size: 22px;
-              span {
-                font-size: 18px;
-              }
-            }
-          }
-        }
-      }
-    }
-    .contact-form {
-      padding: 40px 70px;
-      h1 {
-        font-size: 42px;
-        margin-bottom: 40px;
-      }
-      .information {
-        gap: 60px;
-        .contacts {
-          a {
+          p {
             font-size: 18px;
-            img {
-              width: 30px;
-              height: 30px;
-            }
           }
-          .media {
-            margin-top: 14px;
-            gap: 14px;
-            a {
-              img {
-                width: 40px;
-                height: 40px;
+        }
+      }
+    }
+    .slider {
+      padding: 50px 0;
+      gap: 30px;
+      h1 {
+        font-size: 72px;
+      }
+      &__text {
+        span {
+          font-size: 28px;
+        }
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+    .artists {
+      padding: 50px 70px;
+      gap: 50px;
+      h1 {
+        font-size: 72px;
+      }
+      &__lists {
+        gap: 30px;
+        &__list {
+          button {
+            font-size: 36px;
+            padding: 36px 54px;
+            svg {
+              width: 60px;
+              height: 60px;
+            }
+            &__open {
+              gap: 20px;
+              &__item {
+                gap: 10%;
+                &__text {
+                  gap: 20px;
+                  h1 {
+                    font-size: 32px;
+                  }
+                  p {
+                    font-size: 28px;
+                  }
+                }
               }
             }
           }
         }
-        .form {
-          width: 50%;
-          form {
-            button {
+      }
+    }
+    .activity {
+      padding: 50px 70px;
+      gap: 50px;
+      h1 {
+        font-size: 72px;
+      }
+      &__lists {
+        &__list {
+          button {
+            font-size: 36px;
+            padding: 36px 0;
+            svg {
+              width: 60px;
+              height: 60px;
+            }
+          }
+          &__open {
+            &__item {
+              padding: 36px 0;
+              p {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .zone {
+      padding: 50px 70px;
+      column-gap: 30px;
+      row-gap: 50px;
+      &__item {
+        gap: 18px;
+        img {
+          width: 300px;
+          height: 300px;
+        }
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+    .partners {
+      &__border {
+        padding: 30px 50px;
+        gap: 40px;
+        h1 {
+          font-size: 72px;
+        }
+        &__items {
+          column-gap: 40px;
+          row-gap: 18px;
+          img {
+            width: 150px;
+            height: 100px;
+          }
+        }
+      }
+    }
+    .bans {
+      padding: 70px 0 20px 0;
+    }
+    .reasons {
+      padding: 50px 70px;
+      &__container {
+        padding: 30px;
+        h1 {
+          font-size: 72px;
+        }
+        &__items {
+          padding-top: 50px;
+          column-gap: 100px;
+          row-gap: 70px;
+          &__item {
+            width: 27%;
+            p {
               font-size: 18px;
             }
           }
         }
       }
-      .overlay {
-        .lottie-animation {
-          width: 60%;
-          padding: 50px;
-        }
+    }
+    .location {
+      padding: 50px 70px;
+      gap: 32px;
+      h1 {
+        font-size: 72px;
+      }
+      iframe {
+        height: 400px;
       }
     }
   }
   footer {
     .footer-top {
-      gap: 28px;
-      padding: 40px 70px;
+      gap: 60px;
+      padding: 30px 70px;
       .logo {
         h1 {
-          font-size: 28px;
-        }
-        p {
-          font-size: 18px;
-          margin-top: 8px;
+          font-size: 32px;
         }
       }
       .navigation {
-        gap: 12px;
-        width: 25%;
         h2 {
-          font-size: 22px;
-          margin-bottom: 6px;
-        }
-        a {
-          font-size: 18px;
+          font-size: 24px;
         }
       }
       .contacts {
-        gap: 12px;
         h2 {
-          font-size: 22px;
-          margin-bottom: 6px;
-        }
-        a {
-          font-size: 18px;
-          gap: 6px;
-          img {
-            width: 30px;
-            height: 30px;
-          }
-        }
-        .media {
-          margin-top: 14px;
-          gap: 14px;
-          a {
-            width: 40px;
-            height: 40px;
-            img {
-              width: 40px;
-              height: 40px;
-            }
-          }
+          font-size: 24px;
         }
       }
-    }
-    .footer-span {
-      padding: 12px 0px;
     }
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1300px) {
   header {
     padding: 14px 50px;
 
@@ -1164,7 +1183,7 @@ footer {
       button {
         background: none;
         border: none;
-        color: var(--white);
+        color: var(--bordo);
         font-size: 28px;
       }
       .open-menu {
@@ -1185,7 +1204,7 @@ footer {
           position: fixed;
           height: 100vh;
           border-radius: 0 10px 10px 0;
-          background: var(--bgWheat);
+          background: var(--white);
           left: 0;
           top: 0;
           width: 50%;
@@ -1195,14 +1214,19 @@ footer {
           z-index: 5;
           padding: 40px 24px;
           h1 {
-            font-size: 36px;
+            font-size: 48px;
             margin-bottom: 20px;
             text-align: center;
+            color: var(--bordo);
+            span {
+              color: white;
+              -webkit-text-stroke: 1px var(--bordo);
+            }
           }
           a {
             text-decoration: none;
-            font-size: 18px;
-            color: var(--olive);
+            font-size: 24px;
+            color: var(--bordo);
 
             font-weight: 600;
           }
@@ -1212,14 +1236,14 @@ footer {
             gap: 10px;
             margin-top: 20px;
             padding-top: 20px;
-            border-top: 1px solid var(--bgOrange);
+            border-top: 1px solid var(--maincolor);
             p {
               font-size: 18px;
-              color: var(--olive);
+              color: var(--maincolor);
               font-weight: 600;
               &.active {
                 font-weight: 800;
-                color: var(--maincolor);
+                color: var(--bordo);
               }
             }
           }
@@ -1229,224 +1253,235 @@ footer {
   }
   main {
     .banner {
-      height: 500px;
-      gap: 100px;
-      h1 {
-        font-size: 56px;
+      height: 65vh;
+      padding: 120px 50px 30px 50px;
+      justify-content: center;
+      img {
+        position: absolute;
+        left: 20px;
+        &:nth-child(3) {
+          right: 20px;
+          left: auto;
+        }
       }
-      p {
-        font-size: 20px;
-        width: 70%;
+      &__text {
+        position: relative;
+        z-index: 12;
+        &__date {
+          p {
+            font-size: 16px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+      &__info {
+        h1 {
+          font-size: 48px;
+        }
       }
     }
     .about {
-      padding: 40px 50px;
-      h1 {
-        font-size: 36px;
-        margin-bottom: 16px;
-      }
-      .info {
-        .text {
-          p {
-            font-size: 18px;
-            line-height: 24px;
-          }
-        }
-      }
-    }
-    .services {
-      padding: 40px 50px;
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-      .slider-servicies {
-        padding-bottom: 40px;
-        .slick-slide {
-          padding: 0 10px;
-        }
-        .card {
-          padding: 12px;
-          gap: 12px;
-          h2 {
-            font-size: 22px;
-            text-align: center;
-          }
-          button {
-            font-size: 16px;
-            img {
-              width: 20px;
-              object-fit: contain;
-              height: 20px;
-            }
-          }
-        }
-        .slick-dots {
-          bottom: -45px;
-        }
-        .slick-arrow {
-          display: none !important;
-        }
-        .open-card {
-          .content {
-            width: 80%;
-            img {
-              width: 50%;
-            }
-          }
-        }
-      }
-    }
-    .packages {
-      padding: 40px 50px;
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-      .dates {
-        align-items: center;
-        justify-content: center;
-        row-gap: 30px;
-        column-gap: 30px;
-        flex-wrap: wrap;
-        .data {
+      padding: 30px 50px;
+
+      &__header {
+        gap: 20px;
+        flex-direction: column-reverse;
+
+        img {
           width: 100%;
-
-          justify-content: space-between;
-          align-items: center;
-          height: auto;
-          padding: 10px 12px;
-
-          gap: 6px;
+          height: 300px;
+          object-fit: contain;
+        }
+        &__text {
+          z-index: 4;
+          backdrop-filter: blur(2px);
+          width: 100%;
           h1 {
-            font-size: 22px;
-            gap: 6px;
-            span {
-              font-size: 18px;
-            }
+            font-size: 48px;
+            line-height: 52px;
           }
-          .text {
-            width: 60%;
-            justify-content: space-between;
-            height: auto;
-            align-items: center;
-
-            p {
-              text-align: center;
-            }
-            h3 {
-              font-size: 22px;
-              span {
-                font-size: 18px;
-              }
-            }
+        }
+      }
+      &__statistic {
+        margin-top: 20px;
+        gap: 40px;
+        flex-wrap: wrap;
+        &__stat {
+          width: 28%;
+          h2 {
+            font-size: 28px;
           }
-          img {
-            height: auto;
-            width: 35%;
+          p {
+            font-size: 16px;
           }
         }
       }
     }
-    .contact-form {
-      padding: 40px 50px;
+    .slider {
+      padding: 30px 0;
+      gap: 20px;
       h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
+        font-size: 48px;
       }
-      .information {
-        gap: 30px;
-        flex-direction: column;
-        .contacts {
-          width: 100%;
-          a {
-            font-size: 18px;
-            img {
-              width: 30px;
-              height: 30px;
+      &__text {
+        padding: 0 50px;
+        span {
+          font-size: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .artists {
+      padding: 30px 50px;
+      gap: 30px;
+      h1 {
+        font-size: 48px;
+      }
+      &__lists {
+        gap: 14px;
+        &__list {
+          button {
+            font-size: 28px;
+            svg {
+              width: 40px;
+              height: 40px;
             }
           }
-          .media {
-            margin-top: 14px;
-            gap: 14px;
-            a {
-              img {
-                width: 40px;
-                height: 40px;
+          &__open {
+            &__item {
+              gap: 5%;
+              &__text {
+                h1 {
+                  font-size: 26px;
+                }
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+            &--active {
+              padding: 30px 40px;
+            }
+          }
+        }
+      }
+    }
+    .activity {
+      padding: 30px 50px;
+      h1 {
+        font-size: 48px;
+      }
+      &__lists {
+        &__list {
+          button {
+            font-size: 28px;
+            padding: 28px 0;
+            svg {
+              width: 40px;
+              height: 40px;
+            }
+          }
+          &__open {
+            &__item {
+              padding: 28px 0;
+              p {
+                font-size: 20px;
               }
             }
           }
         }
-        .form {
-          width: 100%;
-          form {
-            button {
-              width: 70%;
-              font-size: 18px;
-            }
+      }
+    }
+    .zone {
+      padding: 30px 50px;
+      row-gap: 60px;
+      column-gap: 40px;
+      &__item {
+        width: 46%;
+        gap: 12px;
+        img {
+          width: 250px;
+          height: 250px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .partners {
+      &__border {
+        padding: 10px 30px;
+        h1 {
+          font-size: 48px;
+        }
+        &__items {
+          column-gap: 20px;
+          row-gap: 30px;
+          img {
+            height: 70px;
+            width: 130px;
           }
         }
+      }
+    }
+    .bans {
+      padding: 30px 0 0 0;
+    }
+    .reasons {
+      padding: 30px 50px;
+      &__container {
+        padding: 20px;
+        h1 {
+          font-size: 48px;
+        }
+        &__items {
+          padding-top: 20px;
+          column-gap: 80px;
+          row-gap: 30px;
+          &__item {
+            width: 43%;
+          }
+        }
+      }
+    }
+    .location {
+      padding: 30px 50px;
+      gap: 24px;
+      h1 {
+        font-size: 48px;
+      }
+      iframe {
+        height: 300px;
       }
     }
   }
   footer {
     .footer-top {
+      padding: 30px 50px;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 28px;
-      justify-content: space-around;
-      padding: 40px 50px;
+      row-gap: 60px;
+      column-gap: 40px;
       .logo {
-        width: 57%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         h1 {
           font-size: 28px;
         }
-        p {
-          font-size: 18px;
-          margin-top: 8px;
-        }
       }
-      .navigation {
-        gap: 12px;
-        width: 30%;
-        h2 {
-          font-size: 22px;
-          margin-bottom: 6px;
-        }
-        a {
-          font-size: 18px;
-        }
-      }
+      .navigation,
       .contacts {
-        width: 47%;
-        gap: 12px;
-        h2 {
-          font-size: 22px;
-          margin-bottom: 6px;
-        }
-        a {
-          font-size: 18px;
-          gap: 6px;
-          img {
-            width: 30px;
-            height: 30px;
-          }
-        }
-        .media {
-          margin-top: 14px;
-          gap: 14px;
-          a {
-            width: 40px;
-            height: 40px;
-            img {
-              width: 40px;
-              height: 40px;
-            }
-          }
-        }
+        width: 45%;
       }
-    }
-    .footer-span {
-      padding: 12px 0px;
     }
   }
 }

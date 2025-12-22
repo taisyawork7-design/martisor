@@ -82,20 +82,31 @@ export default function Header({ onLanguageChange }) {
           <div className="open-menu">
             <div className="menu">
               <h1>
-                WORK<span>TONE</span>
+                {" "}
+                MĂRȚIȘOR:{" "}
+                <p>
+                  RED & <span>WHITE</span>{" "}
+                </p>
               </h1>
               <a href="#about" onClick={() => setOpenMenu(false)}>
                 {t("about")}
               </a>
-              <a href="#services" onClick={() => setOpenMenu(false)}>
-                {t("services")}
+              <a href="#show" onClick={() => setOpenMenu(false)}>
+                {t("show")}
               </a>
-              <a href="#packages" onClick={() => setOpenMenu(false)}>
-                {t("packages")}
+              <a href="#artists" onClick={() => setOpenMenu(false)}>
+                {t("artist")}
               </a>
-              <a href="#contacts" onClick={() => setOpenMenu(false)}>
-                {t("contacts")}
+              <a href="#activity" onClick={() => setOpenMenu(false)}>
+                {t("activity")}
               </a>
+              <a href="#location" onClick={() => setOpenMenu(false)}>
+                {t("location")}
+              </a>
+              <a href="tel:+37376574645" onClick={() => setOpenMenu(false)}>
+                +37376574645
+              </a>
+
               <div className="mobile-dropdown">
                 {Object.keys(languages).map((lang) => (
                   <p
