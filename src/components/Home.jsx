@@ -30,10 +30,11 @@ import ban2 from "../images/ban2.png";
 import ban3 from "../images/ban3.png";
 import ban4 from "../images/ban4.png";
 
-import fair1 from "../images/fair4.jpg";
+import fair1 from "../images/fair1.jpg";
 import food1 from "../images/food2.png";
 import sitting1 from "../images/sitting1.png";
 import kids1 from "../images/kids1.png";
+import Date from "./Date";
 
 export default function Home() {
   const { t } = useTranslation("main");
@@ -112,7 +113,7 @@ export default function Home() {
         <h1>{t("showTitle")}</h1>
         <SliderAbout />
         <div className="slider__text">
-          <span>{t("showDate")}</span>
+          <Date />
           <p>{t("showText")}</p>
         </div>
       </div>
