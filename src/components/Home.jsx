@@ -30,11 +30,12 @@ import ban2 from "../images/ban2.png";
 import ban3 from "../images/ban3.png";
 import ban4 from "../images/ban4.png";
 
-import fair1 from "../images/fair1.jpg";
+import fair1 from "../images/fair2.png";
 import food1 from "../images/food2.png";
 import sitting1 from "../images/sitting1.png";
 import kids1 from "../images/kids1.png";
 import Date from "./Date";
+import ZoneSection from "./Zone";
 
 export default function Home() {
   const { t } = useTranslation("main");
@@ -303,38 +304,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="zone">
-        <div className="zone__item">
-          <img src={bar2} alt="" />
-          <h2>Bar Zone</h2>
-          <p>{t("barZone")}</p>
-        </div>
-        <div className="zone__item">
-          <img src={food1} alt="" />
-          <h2>Food Zone</h2>
-          <p>{t("foodZone")}</p>
-        </div>
-        <div className="zone__item">
-          <img src={fair1} alt="" />
-          <h2>Fair Zone</h2>
-          <p>{t("fairZone")}</p>
-        </div>
-        <div className="zone__item">
-          <img src={sitting1} alt="" />
-          <h2>Sitting Zone</h2>
-          <p>{t("sittingZone")}</p>
-        </div>
-        <div className="zone__item">
-          <img src={kids1} alt="" />
-          <h2>Kids Zone</h2>
-          <p>{t("kidsZone")}</p>
-        </div>
-        <div className="zone__item">
-          <img src={masterclass} alt="" />
-          <h2>Master Class Zone</h2>
-          <p>{t("masterClassZone")}</p>
-        </div>
-      </div>
+      <ZoneSection t={t} />
       <div className="partners">
         <div className="partners__border">
           <h1>{t("partners")}</h1>
