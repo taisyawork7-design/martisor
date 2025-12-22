@@ -1,12 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import phone from "../images/phone.svg";
-import location from "../images/location.svg";
-import email from "../images/email.svg";
-import inst from "../images/instagram.svg";
-import telegram from "../images/telegram.svg";
-import tik from "../images/tik.svg";
-import SimpleForm from "./Form";
 import SliderAbout from "./SliderAbout";
 import SliderServicies from "./SliderServicies";
 import left from "../images/left.svg";
@@ -36,6 +29,11 @@ import ban1 from "../images/ban1.png";
 import ban2 from "../images/ban2.png";
 import ban3 from "../images/ban3.png";
 import ban4 from "../images/ban4.png";
+
+import fair1 from "../images/fair4.jpg";
+import food1 from "../images/food2.png";
+import sitting1 from "../images/sitting1.png";
+import kids1 from "../images/kids1.png";
 
 export default function Home() {
   const { t } = useTranslation("main");
@@ -311,22 +309,22 @@ export default function Home() {
           <p>{t("barZone")}</p>
         </div>
         <div className="zone__item">
-          <img src={bar2} alt="" />
+          <img src={food1} alt="" />
           <h2>Food Zone</h2>
           <p>{t("foodZone")}</p>
         </div>
         <div className="zone__item">
-          <img src={bar2} alt="" />
+          <img src={fair1} alt="" />
           <h2>Fair Zone</h2>
           <p>{t("fairZone")}</p>
         </div>
         <div className="zone__item">
-          <img src={bar2} alt="" />
+          <img src={sitting1} alt="" />
           <h2>Sitting Zone</h2>
           <p>{t("sittingZone")}</p>
         </div>
         <div className="zone__item">
-          <img src={bar2} alt="" />
+          <img src={kids1} alt="" />
           <h2>Kids Zone</h2>
           <p>{t("kidsZone")}</p>
         </div>
