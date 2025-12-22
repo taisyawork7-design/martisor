@@ -46,7 +46,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 100px;
-  gap: 100px;
+  gap: 50px;
   .logo {
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@ header {
   nav {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
 
     a {
       color: var(--maincolor);
@@ -157,7 +157,7 @@ main {
     justify-content: space-between;
     padding: 260px 100px 100px 100px;
     img {
-      width: 350px;
+      width: 300px;
     }
     &__text {
       display: flex;
@@ -192,7 +192,7 @@ main {
         flex-direction: column;
         gap: 20px;
         h1 {
-          font-size: 92px;
+          font-size: 96px;
           color: var(--maincolor);
           font-weight: 800;
           display: flex;
@@ -212,9 +212,8 @@ main {
         }
         a {
           color: var(--maincolor);
-          padding: 14px;
-          border-radius: 8px;
-          border: 2px solid var(--maincolor);
+          padding: 8px;
+          border-bottom: 2px solid var(--maincolor);
           text-decoration: none;
           font-size: 18px;
         }
@@ -515,7 +514,7 @@ main {
     }
   }
   .partners {
-    padding: 20px ;
+    padding: 20px;
     background-image: url(../src/images/carpet.png);
     background-position: center;
     background-size: cover;
@@ -531,14 +530,13 @@ main {
         text-align: center;
         color: var(--bordo);
         text-transform: uppercase;
-     
       }
       &__items {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 32px;
-   
+
         flex-wrap: wrap;
         img {
           width: 200px;
@@ -548,67 +546,151 @@ main {
       }
     }
   }
+  .bans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+
+    img {
+      width: 80px;
+      margin: 0 20px;
+      &:nth-child(2) {
+        width: 100px;
+        margin: 0 10px;
+      }
+    }
+  }
+  .reasons {
+    padding: 70px 100px;
+    &__container {
+      padding: 50px 50px;
+      background: var(--bordo);
+      border-radius: 24px;
+      h1 {
+        font-size: 96px;
+        color: var(--white);
+        text-transform: uppercase;
+        span {
+          color: var(--bordo);
+          -webkit-text-stroke: 2px var(--white);
+        }
+      }
+      &__items {
+        padding-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 140px;
+        row-gap: 100px;
+        &__item {
+          width: 25%;
+          h2 {
+            font-size: 24px;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            border: 1px solid white;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+          }
+          p {
+            font-family: Stolzl_light;
+            font-weight: 400;
+            color: white;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .location {
+    padding: 70px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 56px;
+    h1 {
+      font-size: 96px;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--bordo);
+    }
+    a {
+      color: var(--maincolor);
+      padding: 8px;
+      border-bottom: 2px solid var(--maincolor);
+      text-decoration: none;
+      font-size: 18px;
+    }
+    iframe {
+      width: 80%;
+      height: 450px;
+      border: none;
+      border-radius: 20px;
+    }
+  }
 }
 footer {
-  background: var(--bgWheat);
+  background: var(--white);
   .footer-top {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 80px;
     padding: 50px 100px;
-    .logo {
-      width: 30%;
-      h1 {
-        font-family: DynaPuff;
-        font-size: 32px;
-        color: var(--white);
-        font-weight: 800;
-        -webkit-text-stroke: 1px var(--maincolor);
 
+    .logo {
+      width: 35%;
+      h1 {
+        color: var(--bordo);
+        font-size: 46px;
         span {
-          color: var(--maincolor);
-          -webkit-text-stroke: 1px var(--white);
+          color: white;
+          -webkit-text-stroke: 1px var(--bordo);
         }
       }
       p {
         font-size: 22px;
-
         margin-top: 12px;
+        font-family: Stolzl_light;
       }
     }
     .navigation {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      width: 30%;
+
       h2 {
         font-size: 28px;
-        font-family: Arial, Helvetica, sans-serif;
+
         margin-bottom: 10px;
-        color: var(--maincolor);
+        color: var(--bordo);
       }
       a {
-        font-size: 22px;
-
+        font-size: 20px;
         text-decoration: none;
         color: black;
         width: 100%;
+        font-family: Stolzl_light;
       }
     }
     .contacts {
-      width: 33%;
       display: flex;
       flex-direction: column;
       gap: 8px;
       h2 {
         font-size: 28px;
-        font-family: Arial, Helvetica, sans-serif;
+
         margin-bottom: 10px;
-        color: var(--maincolor);
+        color: var(--bordo);
       }
       a {
-        font-size: 22px;
-
+        font-size: 20px;
+        font-family: Stolzl_light;
         text-decoration: none;
         color: black;
         width: 100%;
@@ -640,15 +722,14 @@ footer {
   }
   .footer-span {
     width: 100%;
-
-    background-color: var(--maincolor);
+    background-color: var(--bordo);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px 100px;
     h3 {
-      color: var(--bgWheat);
-      font-size: 16px;
+      color: var(--white);
+      font-size: 14px;
       font-weight: 400;
     }
   }

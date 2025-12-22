@@ -57,8 +57,8 @@ export default function Header({ onLanguageChange }) {
         <a href="#show">{t("show")}</a>
         <a href="#artists">{t("artist")}</a>
         <a href="#activity">{t("activity")}</a>
-        <a href="#contacts">{t("location")}</a>
-        <a href="#contacts">+37376574645</a>
+        <a href="#location">{t("location")}</a>
+        <a href="tel:+37376574645">+37376574645</a>
       </nav>
       <div className="change-language">
         <button onClick={() => setDropdownOpen(!dropdownOpen)}>

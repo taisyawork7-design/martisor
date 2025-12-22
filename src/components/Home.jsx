@@ -19,18 +19,23 @@ import lupii from "../images/lupii.png";
 import dj from "../images/dj.png";
 import flueras from "../images/flueras.png";
 import rimes from "../images/rimes.png";
-import masterclass from "../images/masterclass1.png"
-import bar2 from "../images/bar2.png"
-import partner1 from "../images/partner1.png"
-import partner2 from "../images/partner2.png"
-import partner3 from "../images/partner3.jpg"
-import partner4 from "../images/partner4.jpg"
-import partner5 from "../images/partner5.png"
-import partner6 from "../images/partner6.jpg"
-import partner7 from "../images/partner 7.webp"
-import partner8 from "../images/partner8.webp"
-import partner9 from "../images/partner9.png"
-import partner10 from "../images/partner10.png"
+import masterclass from "../images/masterclass1.png";
+import bar2 from "../images/bar2.png";
+import partner1 from "../images/partner1.png";
+import partner2 from "../images/partner2.png";
+import partner3 from "../images/partner3.jpg";
+import partner4 from "../images/partner4.jpg";
+import partner5 from "../images/partner5.png";
+import partner6 from "../images/partner6.jpg";
+import partner7 from "../images/partner 7.webp";
+import partner8 from "../images/partner8.webp";
+import partner9 from "../images/partner9.png";
+import partner10 from "../images/partner10.png";
+import partner11 from "../images/partner11.jpg";
+import ban1 from "../images/ban1.png";
+import ban2 from "../images/ban2.png";
+import ban3 from "../images/ban3.png";
+import ban4 from "../images/ban4.png";
 
 export default function Home() {
   const { t } = useTranslation("main");
@@ -57,7 +62,9 @@ export default function Home() {
               </p>
             </h1>
             <h2>{t("slogan")}</h2>
-            <a href="">Great National Assembly Square, Chișinau</a>
+            <a href="https://maps.app.goo.gl/a8FZtEnfqcVwHhay7" target="_blank">
+              {t("address")}
+            </a>
           </div>
         </div>
         <img src={right} alt="" />
@@ -331,23 +338,70 @@ export default function Home() {
       </div>
       <div className="partners">
         <div className="partners__border">
-        <h1>{t("partners")}</h1>
-        <div className="partners__border__items">
-<img src={partner1} alt="" />
-<img src={partner2} alt="" />
-<img src={partner3} alt="" />
-<img src={partner6} alt="" />
-<img src={partner7} alt="" />
-<img src={partner5} alt="" />
-<img src={partner4} alt="" />
-<img src={partner8} alt="" />
-<img src={partner9} alt="" />
-<img src={partner10} alt="" />
-
-        </div>
+          <h1>{t("partners")}</h1>
+          <div className="partners__border__items">
+            <img src={partner1} alt="" />
+            <img src={partner2} alt="" />
+            <img src={partner3} alt="" />
+            <img src={partner11} alt="" />
+            <img src={partner6} alt="" />
+            <img src={partner7} alt="" />
+            <img src={partner5} alt="" />
+            <img src={partner8} alt="" />
+            <img src={partner9} alt="" />
+            <img src={partner4} alt="" />
+            <img src={partner10} alt="" />
+          </div>
         </div>
       </div>
-
+      <div className="bans">
+        <img src={ban1} alt="" />
+        <img src={ban2} alt="" />
+        <img src={ban3} alt="" />
+        <img src={ban4} alt="" />
+      </div>
+      <div className="reasons">
+        <div className="reasons__container">
+          <h1>
+            {t("reasonsTitle")} <br />
+            MĂRȚIȘOR: <span>RED</span> & WHITE{" "}
+          </h1>
+          <div className="reasons__container__items">
+            <div className="reasons__container__items__item">
+              <h2>1</h2>
+              <p>{t("reasons1")}</p>
+            </div>
+            <div className="reasons__container__items__item">
+              <h2>2</h2>
+              <p>{t("reasons2")}</p>
+            </div>
+            <div className="reasons__container__items__item">
+              <h2>3</h2>
+              <p>{t("reasons3")}</p>
+            </div>
+            <div className="reasons__container__items__item">
+              <h2>4</h2>
+              <p>{t("reasons4")}</p>
+            </div>
+            <div className="reasons__container__items__item">
+              <h2>5</h2>
+              <p>{t("reasons5")}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="location">
+        <h1>{t("locationTitle")}</h1>
+        <a href="https://maps.app.goo.gl/a8FZtEnfqcVwHhay7" target="_blank">
+          {t("address")}
+        </a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.2121986560574!2d28.829500176580574!3d47.02433657114222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3387c07c8d%3A0xd2ec02fd2daf3f58!2zUGlhyJthIE1hcmlpIEFkdW7Eg3JpIE5hyJtpb25hbGUsIENoaciZaW7Eg3UsINCc0L7Qu9C00L7QstCw!5e1!3m2!1sru!2s!4v1766384832750!5m2!1sru!2s"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </main>
   );
 }
