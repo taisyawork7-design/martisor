@@ -1526,7 +1526,7 @@ footer {
 
 @media (max-width: 720px) {
   header {
-    padding: 14px 30px;
+    padding: 14px 20px;
     .logo {
       h1 {
         font-size: 20px;
@@ -1536,11 +1536,22 @@ footer {
         height: 50px;
       }
     }
+    .burger-menu {
+      .menu {
+        width: 70% !important;
+        h1 {
+          font-size: 28px !important;
+        }
+        a {
+          font-size: 18px !important;
+        }
+      }
+    }
   }
   main {
     .banner {
       padding: 100px 20px 30px 20px;
-      height: 50vh;
+      height: 450px;
 
       &__text {
         align-items: center;
@@ -1583,6 +1594,8 @@ footer {
           }
         }
       }
+    }
+    .about {
     }
   }
 }
