@@ -1808,20 +1808,38 @@ footer {
         text-align: center;
       }
     }
-    .slider-fullscreen,
-    .zone-slider-fullscreen {
-      .slick-prev,
-      .slick-next,
-      .slick-prev:before,
-      .slick-next:before {
-        display: none;
+  }
+  .slider-fullscreen,
+  .zone-slider-fullscreen {
+    .slick-prev,
+    .slick-next,
+    .slick-prev:before,
+    .slick-next:before {
+      display: none;
+    }
+  }
+  .slider-fullscreen {
+    .slick-dots {
+      bottom: 120px;
+    }
+    &__img {
+      img {
+        max-width: 90%;
       }
     }
-    .slider-container {
+  }
+  .zone-slider-fullscreen {
+    &__inner {
+      width: 90%;
+    }
+    .slick-dots {
+      bottom: 50px !important;
+    }
+  }
+  .slider-container {
+    height: 350px;
+    &__img {
       height: 350px;
-      &__img {
-        height: 350px;
-      }
     }
   }
   footer {
