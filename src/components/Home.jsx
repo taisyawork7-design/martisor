@@ -50,9 +50,10 @@ export default function Home() {
         <img src={left} alt="" />
         <div className="banner__text">
           <div className="banner__text__date">
-            <p>28.02 - 1.03</p>
+            <p className="banner__text__date__pc">28.02 - 1.03</p>
             <h2>{t("bannerDate")}</h2>
-            <h3>13:00-23:00</h3>
+            <p className="banner__text__date__mobile">28.02 - 1.03</p>
+            <h3>13:00-23:00</h3>{" "}
           </div>
           <div className="banner__text__info">
             <h1>

@@ -185,6 +185,9 @@ main {
           border: 2px solid var(--maincolor);
           color: var(--maincolor);
         }
+        &__mobile {
+          display: none;
+        }
       }
       &__info {
         display: flex;
@@ -1275,10 +1278,10 @@ footer {
             font-size: 20px;
           }
         }
-      }
-      &__info {
-        h1 {
-          font-size: 48px;
+        &__info {
+          h1 {
+            font-size: 48px;
+          }
         }
       }
     }
@@ -1521,133 +1524,66 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   header {
-    padding: 12px 20px;
-    h1 {
-      font-size: 24px;
-    }
-    .burger-menu {
-      .open-menu {
-        .menu {
-          width: 75%;
-          h1 {
-            font-size: 28px;
-          }
-        }
+    padding: 14px 30px;
+    .logo {
+      h1 {
+        font-size: 20px;
+      }
+      img {
+        width: 50px;
+        height: 50px;
       }
     }
   }
   main {
     .banner {
-      height: 300px;
-      gap: 50px;
-      h1 {
-        font-size: 38px;
+      padding: 100px 20px 30px 20px;
+      height: 45vh;
+      img {
       }
-      p {
-        font-size: 18px;
-        width: 95%;
-      }
-    }
-    .about {
-      padding: 40px 20px;
-      h1 {
-        font-size: 28px;
-        margin-bottom: 10px;
-      }
-      .info {
-        .text {
-          p {
+      &__text {
+        align-items: center;
+        gap: 24px;
+        &__date {
+          gap: 10px;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          h2 {
             font-size: 16px;
-            line-height: 20px;
-          }
-        }
-      }
-    }
-    .services {
-      padding: 40px 20px;
-      h1 {
-        font-size: 28px;
-      }
-      .slider-servicies {
-        .open-card {
-          .content {
-            padding: 10px;
-            width: 95%;
-            p {
-              font-size: 16px;
-            }
-          }
-        }
-      }
-    }
-    .packages {
-      padding: 40px 20px;
-      h1 {
-        font-size: 28px;
-      }
-      .dates {
-        .data {
-          flex-direction: column;
-          .text {
             width: 100%;
+            text-align: center;
           }
-          img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+          p,
+          h3 {
+            padding: 6px;
+            font-size: 16px;
+          }
+          &__mobile {
+            display: flex;
+          }
+          &__pc {
+            display: none;
+          }
+        }
+        &__info {
+          gap: 14px;
+          h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+          }
+          h2 {
+            text-align: center;
+            font-size: 18px;
+          }
+          a {
+            font-size: 14px;
+            text-align: center;
           }
         }
       }
-    }
-    .contact-form {
-      padding: 40px 20px;
-      h1 {
-        font-size: 28px;
-      }
-      .information {
-        .form {
-          form {
-            button {
-              width: 100%;
-            }
-          }
-        }
-      }
-      .overlay {
-        .lottie-animation {
-          width: 70%;
-          padding: 30px;
-        }
-      }
-    }
-  }
-  footer {
-    .footer-top {
-      padding: 40px 20px;
-      justify-content: center;
-      align-items: center;
-      .contacts,
-      .logo,
-      .navigation {
-        width: 100%;
-      }
-    }
-    .footer-span {
-      display: flex;
-      padding: 10px 20px;
-      align-items: center;
-      h3 {
-        text-align: center;
-        font-size: 14px;
-      }
-    }
-  }
-  .slider-container {
-    height: 200px;
-    img {
-      height: 200px;
     }
   }
 }
