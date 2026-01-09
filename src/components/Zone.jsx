@@ -5,28 +5,28 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { useTranslation } from "react-i18next";
 
-import bar1 from "../images/bar1.png";
-import bar2 from "../images/bar2.png";
-import bar3 from "../images/bar3.png";
+import bar1 from "../images/bar1.webp";
+import bar2 from "../images/bar2.webp";
+import bar3 from "../images/bar3.webp";
 
-import food1 from "../images/food1.png";
-import food2 from "../images/food2.png";
-import food3 from "../images/food3.png";
+import food1 from "../images/food1.webp";
+import food2 from "../images/food2.webp";
+import food3 from "../images/food3.webp";
 
-import fair1 from "../images/fair1.jpg";
-import fair2 from "../images/fair2.png";
-import fair3 from "../images/fair3.jpg";
+import fair1 from "../images/fair1.webp";
+import fair2 from "../images/fair2.webp";
+import fair3 from "../images/fair3.webp";
 
-import sitting1 from "../images/sitting1.png";
-import sitting2 from "../images/sitting2.png";
+import sitting1 from "../images/sitting1.webp";
+import sitting2 from "../images/sitting2.webp";
 
-import kids1 from "../images/kids1.png";
-import kids2 from "../images/kids2.png";
-import kids3 from "../images/kids3.png";
+import kids1 from "../images/kids1.webp";
+import kids2 from "../images/kids2.webp";
+import kids3 from "../images/kids3.webp";
 
-import master1 from "../images/masterclass1.png";
-import master2 from "../images/massterclass2.png";
-import master3 from "../images/massterclass3.png";
+import master1 from "../images/masterclass1.webp";
+import master2 from "../images/massterclass2.webp";
+import master3 from "../images/massterclass3.webp";
 
 const zones = [
   { title: "Bar Zone", textKey: "barZone", images: [bar2, bar1, bar3] },

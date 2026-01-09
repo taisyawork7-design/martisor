@@ -4,36 +4,36 @@ import SliderAbout from "./SliderAbout";
 import SliderServicies from "./SliderServicies";
 import left from "../images/left.svg";
 import right from "../images/right.svg";
-import carpetLine from "../images/carpetLine.png";
+import carpetLine from "../images/carpetLine.webp";
 import sticker from "../images/sticker.svg";
 import { Arrow } from "../images/Arrow";
-import subcorpati from "../images/subcorpati.png";
-import lupii from "../images/lupii.png";
-import dj from "../images/dj.png";
-import flueras from "../images/flueras.png";
-import rimes from "../images/rimes.png";
-import masterclass from "../images/masterclass1.png";
-import bar2 from "../images/bar2.png";
-import partner1 from "../images/partner1.png";
-import partner2 from "../images/partner2.png";
-import partner3 from "../images/partner3.jpg";
-import partner4 from "../images/partner4.jpg";
-import partner5 from "../images/partner5.png";
-import partner6 from "../images/partner6.jpg";
+import subcorpati from "../images/subcorpati.webp";
+import lupii from "../images/lupii.webp";
+import dj from "../images/dj.webp";
+import flueras from "../images/flueras.webp";
+import rimes from "../images/rimes.webp";
+import masterclass from "../images/masterclass1.webp";
+import bar2 from "../images/bar2.webp";
+import partner1 from "../images/partner1.webp";
+import partner2 from "../images/partner2.webp";
+import partner3 from "../images/partner3.webp";
+import partner4 from "../images/partner4.webp";
+import partner5 from "../images/partner5.webp";
+import partner6 from "../images/partner6.webp";
 import partner7 from "../images/partner 7.webp";
 import partner8 from "../images/partner8.webp";
-import partner9 from "../images/partner9.png";
-import partner10 from "../images/partner10.png";
-import partner11 from "../images/partner11.jpg";
-import ban1 from "../images/ban1.png";
-import ban2 from "../images/ban2.png";
-import ban3 from "../images/ban3.png";
-import ban4 from "../images/ban4.png";
+import partner9 from "../images/partner9.webp";
+import partner10 from "../images/partner10.webp";
+import partner11 from "../images/partner11.webp";
+import ban1 from "../images/ban1.webp";
+import ban2 from "../images/ban2.webp";
+import ban3 from "../images/ban3.webp";
+import ban4 from "../images/ban4.webp";
 
-import fair1 from "../images/fair2.png";
-import food1 from "../images/food2.png";
-import sitting1 from "../images/sitting1.png";
-import kids1 from "../images/kids1.png";
+// import fair1 from "../images/fair2.webp";
+// import food1 from "../images/food2.webp";
+// import sitting1 from "../images/sitting1.webp";
+// import kids1 from "../images/kids1.webp";
 import Date from "./Date";
 import ZoneSection from "./Zone";
 
@@ -71,7 +71,8 @@ export default function Home() {
         <img src={right} alt="" />
       </div>
       <div className="line">
-        <img src={carpetLine} alt="" />
+        <img src={carpetLine} alt=""  loading="eager"       
+  fetchpriority="high" />
       </div>
       <div className="about" id="about">
         <div className="about__header">

@@ -1,36 +1,39 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useLayoutEffect, useRef, memo } from "react";
 import Slider from "react-slick";
-import slide1 from "../images/slide1.png";
-import slide2 from "../images/slide2.png";
-import slide3 from "../images/slide3.png";
-import slide4 from "../images/slide4.png";
-import slide5 from "../images/slide5.png";
+import slide1 from "../images/slide1.webp";
+import slide2 from "../images/slide2.webp";
+import slide3 from "../images/slide3.webp";
+import slide4 from "../images/slide4.webp";
+import slide5 from "../images/slide5.webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const slides = [slide1, slide3, slide2, slide4, slide5];
 
+
+const SlideItem = memo(({ slide, onClick }) => (
+  <div className="slider-container__img" onClick={onClick}>
+    <img src={slide} alt="" loading="lazy" />
+  </div>
+));
+
 export default function SliderAbout() {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
   const fullscreenRef = useRef(null);
-  useEffect(() => {
-    if (isFullscreen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
 
+
+  useLayoutEffect(() => {
+    document.body.style.overflow = isFullscreen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [isFullscreen]);
 
-  useEffect(() => {
+  // Переход к активному слайду в fullscreen
+  useLayoutEffect(() => {
     if (isFullscreen && fullscreenRef.current) {
-      setTimeout(() => {
-        fullscreenRef.current.slickGoTo(activeSlide);
-      }, 0);
+      fullscreenRef.current.slickGoTo(activeSlide, true);
     }
   }, [isFullscreen, activeSlide]);
 
@@ -44,10 +47,13 @@ export default function SliderAbout() {
     cssEase: "linear",
     arrows: false,
     swipe: true,
+    adaptiveHeight: false,
+    variableWidth: false,
+    
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 1 },
+        settings: { slidesToShow: 1, adaptiveHeight: false },
       },
     ],
   };
@@ -61,6 +67,8 @@ export default function SliderAbout() {
     arrows: true,
     dots: true,
     swipe: true,
+    adaptiveHeight: false,
+    variableWidth: false,
   };
 
   return (
@@ -68,16 +76,14 @@ export default function SliderAbout() {
       <div className="slider-container">
         <Slider {...settings} key={isFullscreen ? "paused" : "playing"}>
           {slides.map((slide, index) => (
-            <div
+            <SlideItem
               key={index}
-              className="slider-container__img"
+              slide={slide}
               onClick={() => {
                 setActiveSlide(index);
                 setIsFullscreen(true);
               }}
-            >
-              <img src={slide} alt="" />
-            </div>
+            />
           ))}
         </Slider>
       </div>
@@ -91,10 +97,14 @@ export default function SliderAbout() {
             ✕
           </button>
 
-          <Slider ref={fullscreenRef} {...fullscreenSettings} key={activeSlide}>
+          <Slider
+            ref={fullscreenRef}
+            {...fullscreenSettings}
+            key={activeSlide}
+          >
             {slides.map((slide, index) => (
               <div key={index} className="slider-fullscreen__img">
-                <img src={slide} alt="" />
+                <img src={slide} alt="" loading="lazy" />
               </div>
             ))}
           </Slider>
